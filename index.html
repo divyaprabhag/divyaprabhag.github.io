@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    body {
+        /* height: 100vh;  */
+        width: 100vw;
+        background-color: #f5f5f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+
+    .section1 {
+        width: 70%;
+        height: 12rem;
+        background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.017),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.024),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.03),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.036),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.043),
+  100px 100px 80px rgba(0, 0, 0, 0.06)
+;
+
+    }
+
+
+    .profile-img-section {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .profile-data {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+    }
+
+
+    .profile-img {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+    }
+
+
+    .section2 {
+        width: 70%;
+        height: 12rem;
+        /* background-color: aquamarine; */
+        /* border: 1px solid rgb(75, 140, 91); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* padding: 10px; */
+    }
+
+
+    .section3 {
+        width: 70%;
+        height: 20rem;
+        /* background-color: aquamarine; */
+        /* border: 1px solid rgb(75, 140, 91); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    
+        /* padding: 10p; */
+    }
+
+
+    .section4 {
+        width: 70%;
+        height: 15rem;
+        /* background-color: aquamarine; */
+        /* border: 1px solid rgb(75, 140, 91); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* padding: 10px; */
+    }
+    .section5 {
+        width: 70%;
+        height: 15rem;
+        /* background-color: aquamarine; */
+       /*border: 1px solid rgb(75, 140, 91); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* padding: 10px; */
+    }
+    .section7 {
+        width: 70%;
+        height: 5rem;
+        /* background-color: aquamarine; */
+       /*border: 1px solid rgb(75, 140, 91); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 5px; */
+        /* padding: 10px; */
+    }
+    .section6 {
+        /* width: 70%;
+        height: 15rem;
+        border: 1px s rgb(75, 140, 91);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start; */
+        width: 70%;
+        height: 3rem;
+        /* background-color: rgb(224, 55, 8); */
+        background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.017),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.024),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.03),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.036),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.043),
+  100px 100px 80px rgba(0, 0, 0, 0.06)
+;
+}
+button {
+ width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #376baa 0%, #528bdb 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 9em;
+}
+
+    .section-title {
+        /* height: 10%; */
+        color: rgb(11, 127, 221);
+        font-weight: bold;
+    }
+
+
+    .ed-table {
+        width: 100%;
+        border: 1px solid rgb(75, 140, 91);
+        border-collapse: collapse;
+    }
+
+
+    th{
+        width: 70%;
+        height: 4rem;
+        /* background-color: rgb(224, 55, 8); */
+        background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #191654, #43C6AC);
+    }
+    td {
+        padding: 1rem;
+        border: 1px solid rgb(75, 140, 91);
+        border-color: #43C6AC;  /* fallback for old browsers */
+        
+    }
+
+
+    .companies {
+        font-weight: bold;
+
+
+        color: rgb(80, 154, 99);
+    }
+    *::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #191654, #43C6AC);
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #32678b;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #6baad4;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+.icons i{
+    color: #100101;
+}
+</style></head>
+<body>
+    
+
+<div class="section1">
+    <div class="profile-img-section">
+        <img src="./pic.jpeg" alt="" class="profile-img">
+
+    </div>
+    <div class="profile-data">
+        <h1>Divya Prabha G</h1>
+        <h3>divyagprabha@gmail.com</h3>
+    </div>
+</div>
+<div class="section2">
+    <h1 class="section-title">
+          Objective
+    </h1>
+    <p>
+        Passionate about Java Full Stack development, aiming to leverage my skills in Java, HTML, CSS, JavaScript, and frameworks like Spring and Hibernate, to contribute to high-quality software development while continuing to learn and adapt to new technologies.
+    </p>
+</div>
+<div class="section3">
+    <h1 class="section-title">
+        Education
+  </h1>
+  <table class="ed-table">
+    <tr>
+        <th>Degree</th>
+        <th>Campus</th>
+        <th>Score</th>
+        <th>Place</th>
+    </tr>
+    <tr>
+        <td>I-VII</td>
+        <td>JMHSS</td>
+        <td>90%</td>
+        <td>Salem</td>
+    </tr>
+    <tr>
+        <td>VIII-XII</td>
+        <td>SRV GIRLS</td>
+        <td>83%</td>
+        <td>Namakkal</td>
+    </tr>
+    <tr>
+        <td>B.Tech IT</td>
+        <td>SIET</td>
+        <td>85%</td>
+        <td>Coimbatore</td>
+    </tr>
+  </table>
+</div>
+<div class="section4">
+    <h1 class="section-title">
+        Internships
+  </h1>
+  <p>
+    <span class="companies">ShadowFox</span><br>
+    Sep 2024 <br>
+    Web Developer<br><br>
+    <span class="companies">Cognifyz</span><br>
+    Sep 2024 <br>
+    Fullstack Developer
+  </p>
+</div>
+<div class="section5">
+    <h1 class="section-title">
+        Skills
+  </h1>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Spring Boot</li>
+    <li>Java</li>
+  </ul>
+</div>
+<div class="section6 icons i">
+    <a href="tel:+917695986564"><i class="fa-solid fa-phone"></i></a>
+    <a href="mailto:divyagprabha@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/divya-prabha-g-5616a731b"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="section7">
+        <button> Pick up!
+        </button>
+      
+</div>
+</body>
+</html>
