@@ -1,1 +1,108 @@
+// grid.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box red">R</div>
+        <div class="box blue">B</div>
+        <div class="box purple">P</div>
+    </div>
+</body>
+</html>
+//style.css
+*{
+    margin:0px;
+}
 
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height:100%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+
+}
+
+ .red{
+    background-color: red;
+ }
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
+}
+
+@media only screen and (min-width:600px) {
+    .red {
+        background-color: rgb(246, 88, 88);
+    }
+
+    .blue {
+        background-color: rgb(137, 137, 246);
+    }
+
+    .purple {
+        background-color: rgb(171, 117, 221);
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+}
+
+
+.blue{
+    grid-row: 2/3;
+    grid-column: -3/-2;
+   
+}
+.purple{
+    grid-row: 3/4;
+    grid-column: -1/-2;
+}
+
+
+@keyframes myanimation{
+    0%{
+        transform:translateX(-100%);
+        rotate:90deg;
+        sscale:0%;
+    }
+    50%{
+        transform:translateX(0%);
+        roatate:180deg;
+        scale:50%;
+    }
+    100%{
+        translateX(100%);
+        rotate:360%;
+        scale:100%;
+    }
+}
+    .red{
+        animation: 2s myanimation linear infinite;
+    }
+
+    
